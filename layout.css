@@ -1,0 +1,165 @@
+
+/* Mobile first */
+html {
+    font-size: 62,5%;
+    }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #83C05B;
+}
+
+header {
+  background-color: #83C05B;
+}
+
+.menubar {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  background-color: #9DCD7C;
+  color: white;
+  text-shadow: 2px 2px grey;
+}
+
+.menubar > * {
+  padding: 1em;
+  border: solid 1px;
+  border-color: dimgray;
+  border-radius: 0.5rem;
+}
+
+section {
+  padding: 1rem;
+}
+
+.vision img {
+  display: none;
+}
+
+h2 {
+  background-color: lightgray;
+  padding: 0.5rem;
+}
+
+figure img {
+  max-width: 100%;
+  margin: 0.5rem 0;
+}
+
+footer {
+  margin: 1rem 0 0 0;
+}
+
+.specials, .events, .news {
+  padding: 0.5rem;
+  background-color: white;
+  margin-block-end: 1rem;
+}
+
+h2 figure {
+  width: 12px;
+  height: 10px;
+  float: right;
+}
+
+.news ul {
+  padding: 0.5rem;
+}
+
+.news li {
+  display: flex;
+  flex-direction: row;
+}
+
+.news span {
+  font-weight: 700;
+  flex-basis: 50px;
+}
+
+.address {
+  color: white;
+}
+
+.social {
+  float: right;
+  display: flex;
+  flex-direction: row;
+}
+
+.facebook, .twitter figure {
+  fill: white;
+  margin: 2px;
+  width: 12px;
+  height: 12px;
+}
+
+
+
+    /* tablet-näkymä */
+
+@media only screen and (min-width: 426px) {
+    
+    .menubar {
+      display: flex;
+      flex-direction: row;
+      margin-block-end: 1rem;
+    }
+
+    .menubar > * {
+      flex-grow: 1;
+    }
+    .vision {
+      background-image: url(images/Plain\ beige\ textured\ background\ vector\ free\ image\ by\ rawpixel.jpg);
+      margin: 0 0 0.5rem 0;
+      border: white solid 0.5rem;
+      display: flex;
+      flex-direction: row;
+      flex-grow: 1;
+      font-size: 1.5rem;
+      align-items: center;
+    }
+    
+    .vision img {
+      display: flex;
+      margin: 0;
+    }
+    .boxes {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+
+    .specials, .events {
+      flex-basis: 0;
+      flex-grow: 1;
+    }
+
+    .news {
+      flex-basis: 100%;
+    }
+
+    footer {
+      margin: 0;
+    }
+
+  }
+
+  /* desktop-näkymä */
+
+  @media only screen and (min-width: 769px) {
+    
+    body {
+      margin: 1rem;
+    }
+
+    .boxes {
+       flex-wrap: nowrap;
+    }
+
+    .boxes > * {
+      flex-grow: 1;
+      flex-basis: 100%;
+    }
+
+  }
